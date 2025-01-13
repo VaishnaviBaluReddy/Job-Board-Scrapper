@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Job Scraper</title>
+    <style>
+        /* Import Pixel Indie Game Font */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Color Palette */
+        :root {
+            --main-bg: #0b0c10;
+            --dark-bg: #222629;
+            --light-bg: #1f2833;
+            --accent-1: #61892f;
+            --accent-2: #86c232;
+            --text-light: #c5c697;
+            --highlight: #66fcf1;
+            --button-bg: #45a29e;
+            --button-hover-bg: #6b6e70;
+        }
+
+        /* Basic Styles */
+        body {
+            background-color: var(--main-bg);
+            color: var(--text-light);
+            font-family: 'Press Start 2P', cursive; /* Retro Pixel Font */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--highlight);
+            margin-top: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        label {
+            margin: 10px 0;
+            font-size: 16px;
+            color: var(--accent-2);
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 10px;
+            width: 250px;
+            margin-bottom: 20px;
+            border: 2px solid var(--accent-1);
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+            border-color: var(--highlight);
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: var(--button-bg);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: var(--button-hover-bg);
+        }
+
+        .form-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>LinkedIn Job Search</h1>
+    <form action="/process" method="post">
+        <div class="form-section">
+            <label for="role">Job Role:</label>
+            <input type="text" id="role" name="role" required>
+        </div>
+        <div class="form-section">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-section">
+            <label for="yoe">Years of Experience:</label>
+            <input type="number" id="yoe" name="yoe" required>
+        </div>
+        <button type="submit">Search Jobs</button>
+    </form>
+</body>
+</html>
