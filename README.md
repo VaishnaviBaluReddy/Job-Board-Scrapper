@@ -3,6 +3,16 @@
 A dynamic and scalable Flask-based web application that empowers users with actionable insights into the job market. Designed for working professionals and job seekers, it provides a data-driven approach to identifying in-demand skills and career opportunities. With robust scraping, analysis, and visualization features,  extracts and processes job descriptions from LinkedIn to highlight the most sought-after technical skills.
 
 The application is modular and extensible, with plans to incorporate other job portals, making it a comprehensive tool for understanding job trends across platforms.
+
+The result looks something like this: 
+**Front Page**:
+![Front page](https://github.com/user-attachments/assets/4eeb965a-a7cc-4dc1-97ff-7ee024ee5579)
+**Results**:
+![Charts](https://github.com/user-attachments/assets/0278d60e-b48d-4cc4-8a20-ba44719e81f5)
+![Job listings](https://github.com/user-attachments/assets/6ffdd4ca-50e3-4a9c-b820-2df6c3b42939)
+
+
+
 Key Features
 ### Job Scraping:
 - Retrieve job listings from LinkedIn based on user-defined criteria such as job role, location, and years of experience (YOE).
