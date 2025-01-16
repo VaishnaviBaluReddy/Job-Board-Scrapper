@@ -5,6 +5,7 @@ A dynamic and scalable Flask-based web application that empowers users with acti
 The application is modular and extensible, with plans to incorporate other job portals, making it a comprehensive tool for understanding job trends across platforms.
 
 The result looks something like this: 
+
 **Front Page**:
 ![Front page](https://github.com/user-attachments/assets/4eeb965a-a7cc-4dc1-97ff-7ee024ee5579)
 **Results**:
